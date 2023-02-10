@@ -2,9 +2,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+  body{
+    background-color: rgba(224, 224, 224, 0.5);
+  }
 /* Styles the Nav-Bar */
 .navbar{
-    background-color: rgba(132, 132, 248, 0.8) !important;
+    background-color: rgba(32, 44, 58, 0.8) !important;
 }
 .logo{
     width: 5rem;
@@ -20,6 +23,7 @@
 }
 .nav-link{
     margin-left: 3rem;
+    color: white !important;
 }
 .active::after{
     content: '';
