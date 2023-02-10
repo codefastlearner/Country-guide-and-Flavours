@@ -1,9 +1,9 @@
 * {
     scroll-behavior: smooth;
   }
-  
+/* Styles the Nav-Bar */
 .navbar{
-    background-color: rgba(69, 69, 248, 0.8) !important;
+    background-color: rgba(132, 132, 248, 0.8) !important;
 }
 .logo{
     width: 5rem;
@@ -11,18 +11,28 @@
 }
 .navbar-nav{
    font-size: 1.2rem;
-   font-weight: 480;
+   font-weight: 550;
 }
 .nav-link{
-    color: white !important;
     margin-left: 3rem;
-    transition: 0.3s;
+}
+.active::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.active:hover::after{
+    width: 100%;
 }
 .dropdown{
 margin-left: auto;
 margin-right: 0 !important;
+color: black !important;
 }
-.nav-link:hover{
-    background-color: rgba(255, 0, 0, 0.6);
-    border-radius: 10px;
-}
+
+
+
