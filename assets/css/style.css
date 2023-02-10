@@ -72,19 +72,17 @@ input{
    height: 15px;
    width: 30px;
 }
-
+/* Styles the card */
 .container-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 40px 10px;
 }
-
-
 .heading-cards {
     text-align: center;
     display: block;
-    margin-top: 30px;git
+    margin-top: 30px;
 }
 
 
