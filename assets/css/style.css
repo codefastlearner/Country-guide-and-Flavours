@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     scroll-behavior: smooth;
   }
 /* Styles the Nav-Bar */
@@ -9,7 +10,6 @@
     width: 5rem;
     border-radius: 20px;
     transition: transform .2s;;
-    margin: 0 auto
 }
 .logo:hover{
     transform: scale(1.2);
@@ -36,7 +36,41 @@
 .dropdown{
 margin-left: auto;
 margin-right: 0 !important;
-color: black !important;
+}
+
+/* Styles carousels */
+.carousel-item{
+    max-height: 85vh;
+}
+/* Styles the search input field */
+.main form{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    width: 25rem
+} 
+.search-input-wrapper {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+}
+ 
+.search-input-wrapper::after {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+   right: 0px;
+   background: url("https://i.ibb.co/D1dvJTV/icons8-search.gif") no-repeat center;
+   background-size: 20px auto;
+   height: 15px;
+   width: 30px;
 }
 
 
