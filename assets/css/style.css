@@ -8,6 +8,11 @@
 .logo{
     width: 5rem;
     border-radius: 20px;
+    transition: transform .2s;;
+    margin: 0 auto
+}
+.logo:hover{
+    transform: scale(1.2);
 }
 .navbar-nav{
    font-size: 1.2rem;
