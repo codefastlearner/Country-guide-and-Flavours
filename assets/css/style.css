@@ -55,7 +55,7 @@ margin-right: 0 !important;
 }
 
 input{
-    width: 25rem;
+    width: 30rem;
     outline: none;
     height: 2.5rem;
     border-radius: 5px;
@@ -68,17 +68,17 @@ input{
 }
  
 .search-input-wrapper::after {
-   content: "";
+   content:"";
    position: absolute;
    z-index: 1;
    top: 0;
    bottom: 0;
    margin: auto;
    right: 0px;
-   background: url("https://i.ibb.co/D1dvJTV/icons8-search.gif") no-repeat center;
+   background: url("/assets/images/icons8-search.gif") no-repeat center;
    background-size: 20px auto;
-   height: 15px;
-   width: 30px;
+   height: 25px;
+   width: 40px;
 }
 /* Styles the card on landing page*/
 .container-cards {
