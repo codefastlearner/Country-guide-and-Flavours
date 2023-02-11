@@ -49,8 +49,9 @@ margin-right: 0 !important;
 /* Styles the search input field */
 .main form{
     position: absolute;
-    top: 50%;
+    top: 55%;
     width: 100%;
+    bottom: 50%;
     text-align: center;
 }
 
@@ -93,13 +94,12 @@ input{
     margin-top: 30px;
 }
 
-/* Styles card on second page */
+/* Styles card components on second page */
 .search-card{
     height: 40rem;
     display: block;
     margin:5em auto;
     transition: transform 1s;;
-    cursor: pointer;
     position: relative;
 }
 .card-text{
@@ -112,6 +112,7 @@ input{
 .btn2{
     margin-left: 12em;
 }
+/* Styles the share and save button on page 2 */
 .share-save{
     position: absolute;
     top: 0;
@@ -120,10 +121,15 @@ input{
 }
 .share-save p{
     display: inline-block;
-    margin-left: 1.5rem;
-    background-image: linear-gradient(white, rgb(185, 185, 211));
+    margin-left: 1.1rem;
+    background-image: linear-gradient(white, rgba(185, 185, 211, 0.7));
     padding: 0.5rem;
     border-radius: 10px;
     font-size: 0.5rem;
     font-weight: 500;
+}
+.share-save a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
