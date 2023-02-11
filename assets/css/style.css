@@ -7,7 +7,6 @@
   }
 /* Styles the Nav-Bar */
 .navbar{
-    /* background-color: rgba(32, 44, 58, 0.8) !important; */
     background-image: linear-gradient(#4A535E, #202d3b, rgb(39, 39, 62));
 }
 .logo{
@@ -89,7 +88,5 @@ input{
     display: block;
     margin-top: 30px;
 }
-
-
 
 
