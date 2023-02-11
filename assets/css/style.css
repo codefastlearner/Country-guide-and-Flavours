@@ -55,7 +55,11 @@ margin-right: 0 !important;
 }
 
 input{
-    width: 25rem
+    width: 25rem;
+    outline: none;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-style: none;
 } 
 .search-input-wrapper {
    position: relative;
@@ -91,15 +95,20 @@ input{
 
 /* Styles card on second page */
 .search-card{
-    height: 35rem;
+    height: 40rem;
     display: block;
     margin:5em auto;
     transition: transform 1s;;
     cursor: pointer;
-    /* max-width: 50vw; */
 }
-.search-card:hover, .btn:hover{
+.card-text{
+    text-align: center;
+}
+.search-card:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-    transform: scale(1.05);
+    transform: scale(1.02);
+}
+.btn2{
+    margin-left: 12em;
 }
 
