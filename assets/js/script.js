@@ -1,14 +1,9 @@
+// Defines our variables
 let searchBtn = document.getElementById("searchButton");
 let countryInp = document.getElementById("countryInput");
 searchBtn.addEventListener("click", () => {
     let countryName = countryInp.value;
-    let finalURL = `https://rest-country-api.p.rapidapi.com/name=${countryName}?fullText=true`;
-    console.log(finalURL);
-
-
-
-
-
+// Fetch data from restCountry API 
 const options = {
 	method: 'GET',
 	headers: {
@@ -16,10 +11,8 @@ const options = {
 		'X-RapidAPI-Host': 'rest-country-api.p.rapidapi.com'
 	}
 };
-
 fetch('https://rest-country-api.p.rapidapi.com/' + countryName , options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
-
 });
