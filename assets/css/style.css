@@ -12,7 +12,7 @@
 .logo{
     width: 5rem;
     border-radius: 20px;
-    transition: transform .2s;;
+    transition: transform 1s;;
 }
 .logo:hover{
     transform: scale(1.2);
@@ -76,7 +76,7 @@ input{
    height: 15px;
    width: 30px;
 }
-/* Styles the card */
+/* Styles the card on landing page*/
 .container-cards {
     display: flex;
     flex-direction: row;
@@ -89,4 +89,17 @@ input{
     margin-top: 30px;
 }
 
+/* Styles card on second page */
+.search-card{
+    height: 35rem;
+    display: block;
+    margin:5em auto;
+    transition: transform 1s;;
+    cursor: pointer;
+    /* max-width: 50vw; */
+}
+.search-card:hover, .btn:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transform: scale(1.05);
+}
 
