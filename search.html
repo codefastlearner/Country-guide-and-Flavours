@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/de1197ced0.js" crossorigin="anonymous"></script>
     <title>Country Guide and Flavours| Search</title>
 </head>
 <body>
@@ -32,9 +33,20 @@
                   </li>
             </div>
         </nav>
+<!-- Displays search result for user -->
     <article>
         <div class="card search-card" style="width: 30rem;">
-            <img src="./assets/images/flag-800.png" class="card-img-top" alt="..." id="flags">
+            <div>
+                <div class="share-save">
+                    <p>share
+                        <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+                    </p>
+                    <p>save
+                        <i class="fa-regular fa-floppy-disk"></i>
+                    </p>
+                </div>
+                <img src="./assets/images/flag-800.png" class="card-img-top" alt="..." id="flags">
+            </div>
             <div class="card-body">
               <h5 class="card-text" id="search-text">Name:</h5>
               <p class="card-text" id="search-text">Capital:</p>
@@ -45,7 +57,7 @@
               <a href="#" class="btn btn-primary" id="flavour">Explore Flavour</a>
               <a href="./index.html" class="btn btn-secondary btn2">Back Home</a>
             </div>
-          </div>
+        </div>
     </article>
     
 

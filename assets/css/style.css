@@ -75,7 +75,7 @@ input{
    bottom: 0;
    margin: auto;
    right: 0px;
-   background: url("/assets/images/icons8-search.gif") no-repeat center;
+   background: url("/assets/images/search-icon-png-21.png") no-repeat center;
    background-size: 20px auto;
    height: 25px;
    width: 40px;
@@ -100,6 +100,7 @@ input{
     margin:5em auto;
     transition: transform 1s;;
     cursor: pointer;
+    position: relative;
 }
 .card-text{
     text-align: center;
@@ -111,4 +112,18 @@ input{
 .btn2{
     margin-left: 12em;
 }
-
+.share-save{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.share-save p{
+    display: inline-block;
+    margin-left: 1.5rem;
+    background-image: linear-gradient(white, rgb(185, 185, 211));
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    font-weight: 500;
+}

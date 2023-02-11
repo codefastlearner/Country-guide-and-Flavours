@@ -16,3 +16,6 @@ fetch('https://rest-country-api.p.rapidapi.com/' + countryName , options)
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
 });
+
+
+
