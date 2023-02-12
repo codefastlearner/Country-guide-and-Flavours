@@ -1,3 +1,4 @@
+
 /*Typography imports*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lato:ital,wght@1,300;1,400&family=Orbitron&display=swap');
 
@@ -135,6 +136,9 @@ input{
    height: 25px;
    width: 40px;
 }
+
+
+
 /* Styles the card on landing page*/
 .container-cards {
     display: flex;
@@ -150,7 +154,7 @@ input{
 
 .card {
     display: block;
-    height: 550px;
+    height: 650px;
     width: 450px;
     border: 1px solid #ffff;
     margin: 0 0 30px 0;
@@ -168,14 +172,34 @@ input{
     text-align: start;
     font-family: Lato, sans-serif;
     font-weight: 400 bold;
+    text-align: center;
 
 }
-.btn {
-    position: block;
-    float: right;
-    font-weight: 300;
-    cursor: pointer;
 
+.flags-link {
+
+font-size: small;
+cursor: pointer;
+
+}
+
+.btn {
+        display: inline-block;
+        border-radius: 2px;
+        border: none;
+        height: 45px;
+        padding: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+.lg {
+        width: 40%;
+      }
+
+
+.audio-bar {
+    width: 100%;
 }
 
 /* Styles card components on second page */
