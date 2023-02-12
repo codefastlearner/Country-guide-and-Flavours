@@ -44,15 +44,64 @@ margin-right: 0 !important;
 
 /* Styles carousels */
 .carousel-item{
-    max-height: 85vh;
+    max-height: 100vh;
 }
 /* Styles the search input field */
 .main form{
     position: absolute;
     top: 55%;
     width: 100%;
-    bottom: 50%;
+    /* bottom: 35%; */
     text-align: center;
+}
+
+/* Media queries for search input */
+@media (max-width: 1450px) and (min-width: 1150px) {
+    .main form {
+      top: 50%;
+    }
+  }
+  @media (max-width: 1150px) {
+    .main form {
+      top: 45%;
+    }
+  }
+  @media (max-width: 1000px){
+    .main form{
+        top:40%;
+    }
+}
+@media (max-width: 830px){
+    .main form{
+        top:38%;
+    }
+    input{
+        width: 25rem !important;
+    }
+}
+@media (max-width: 650px){
+    .main form{
+        top:33%;
+    }
+    input{
+        width: 20rem !important;
+    }
+}
+@media (max-width: 520px){
+    .main form{
+        top:30%;
+    }
+    input{
+        width: 17rem !important;
+    }
+}
+@media (max-width: 420px){
+    .main form{
+        top:23%;
+    }
+    input{
+        width: 14rem !important;
+    }
 }
 
 input{
