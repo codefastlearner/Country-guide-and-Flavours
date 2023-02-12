@@ -65,14 +65,14 @@ margin-right: 0 !important;
       top: 45%;
     }
   }
-  @media (max-width: 1000px){
+  @media (max-width: 912px){
     .main form{
-        top:40%;
+        top:28%;
     }
 }
 @media (max-width: 830px){
     .main form{
-        top:38%;
+        top:30%;
     }
     input{
         width: 25rem !important;
