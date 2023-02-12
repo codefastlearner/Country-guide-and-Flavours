@@ -46,16 +46,15 @@ margin-right: 0 !important;
 .carousel-item{
     max-height: 100vh;
 }
-/* Styles the search input field */
+/* Styles the search Bar field */
 .main form{
     position: absolute;
     top: 55%;
     width: 100%;
-    /* bottom: 35%; */
     text-align: center;
 }
 
-/* Media queries for search input */
+/* Media queries for search Bar */
 @media (max-width: 1450px) and (min-width: 1150px) {
     .main form {
       top: 50%;
@@ -150,12 +149,12 @@ input{
     margin:5em auto;
     transition: transform 1s;;
     position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 .card-text{
     text-align: center;
 }
 .search-card:hover{
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     transform: scale(1.02);
 }
 .btn2{
