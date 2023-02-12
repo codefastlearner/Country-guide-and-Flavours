@@ -7,13 +7,12 @@
   }
 /* Styles the Nav-Bar */
 .navbar{
-    /* background-color: rgba(32, 44, 58, 0.8) !important; */
     background-image: linear-gradient(#4A535E, #202d3b, rgb(39, 39, 62));
 }
 .logo{
     width: 5rem;
     border-radius: 20px;
-    transition: transform .2s;;
+    transition: transform 1s;;
 }
 .logo:hover{
     transform: scale(1.2);
@@ -45,18 +44,71 @@ margin-right: 0 !important;
 
 /* Styles carousels */
 .carousel-item{
-    max-height: 85vh;
+    max-height: 100vh;
 }
-/* Styles the search input field */
+/* Styles the search Bar field */
 .main form{
     position: absolute;
-    top: 50%;
+    top: 55%;
     width: 100%;
     text-align: center;
 }
 
+/* Media queries for search Bar */
+@media (max-width: 1450px) and (min-width: 1150px) {
+    .main form {
+      top: 50%;
+    }
+  }
+  @media (max-width: 1150px) {
+    .main form {
+      top: 45%;
+    }
+  }
+  @media (max-width: 1000px){
+    .main form{
+        top:40%;
+    }
+}
+@media (max-width: 830px){
+    .main form{
+        top:38%;
+    }
+    input{
+        width: 25rem !important;
+    }
+}
+@media (max-width: 650px){
+    .main form{
+        top:33%;
+    }
+    input{
+        width: 20rem !important;
+    }
+}
+@media (max-width: 520px){
+    .main form{
+        top:30%;
+    }
+    input{
+        width: 17rem !important;
+    }
+}
+@media (max-width: 420px){
+    .main form{
+        top:23%;
+    }
+    input{
+        width: 14rem !important;
+    }
+}
+
 input{
-    width: 25rem
+    width: 30rem;
+    outline: none;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-style: none;
 } 
 .search-input-wrapper {
    position: relative;
@@ -65,19 +117,19 @@ input{
 }
  
 .search-input-wrapper::after {
-   content: "";
+   content:"";
    position: absolute;
    z-index: 1;
    top: 0;
    bottom: 0;
    margin: auto;
    right: 0px;
-   background: url("https://i.ibb.co/D1dvJTV/icons8-search.gif") no-repeat center;
+   background: url("/assets/images/search-icon-png-21.png") no-repeat center;
    background-size: 20px auto;
-   height: 15px;
-   width: 30px;
+   height: 25px;
+   width: 40px;
 }
-/* Styles the card */
+/* Styles the card on landing page*/
 .container-cards {
     display: flex;
     flex-direction: row;
@@ -90,6 +142,42 @@ input{
     margin-top: 30px;
 }
 
-
-
-
+/* Styles card components on second page */
+.search-card{
+    height: 40rem;
+    display: block;
+    margin:5em auto;
+    transition: transform 1s;;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.card-text{
+    text-align: center;
+}
+.search-card:hover{
+    transform: scale(1.02);
+}
+.btn2{
+    margin-left: 12em;
+}
+/* Styles the share and save button on page 2 */
+.share-save{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.share-save p{
+    display: inline-block;
+    margin-left: 1.1rem;
+    background-image: linear-gradient(white, rgba(185, 185, 211, 0.7));
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    font-weight: 500;
+}
+.share-save a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
