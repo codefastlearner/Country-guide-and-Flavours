@@ -1,3 +1,8 @@
+
+/*Typography imports*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lato:ital,wght@1,300;1,400&family=Orbitron&display=swap');
+
+
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -45,7 +50,9 @@ margin-right: 0 !important;
 /* Styles carousels */
 .carousel-item{
     max-height: 100vh;
+    opacity: 0.80;
 }
+
 /* Styles the search Bar field */
 .main form{
     position: absolute;
@@ -103,6 +110,12 @@ margin-right: 0 !important;
     }
 }
 
+/* Media queries for the cards */
+@media screen {
+    
+}
+
+
 input{
     width: 30rem;
     outline: none;
@@ -129,18 +142,67 @@ input{
    height: 25px;
    width: 40px;
 }
+
+
+
 /* Styles the card on landing page*/
+
 .container-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 40px 10px;
 }
+
+
+.card {
+    display: block;
+    height: 60vh;
+    width: 450px;
+    margin: 0 0 30px 0;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0.12) 1px 1px 20px 0px;
+}
+
+.card-img-top {
+    height: 40%;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-weight: 400 bold;
+    display: block;
+    margin-top: 20px;
+
+}
+
+
+
+.audio-bar {
+    width: 100%;
+}
+
+.card-text {
+    font-size: 1em;
+    width: 100%;
+}
+
+
 .heading-cards {
     text-align: center;
-    display: block;
-    margin-top: 30px;
-}
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin: 50px auto;
+    font-size: 2rem;
+  }
+
+  .btn {
+    color: aqua;
+    
+  }
+  
 
 /* Styles card components on second page */
 .search-card{
@@ -181,3 +243,6 @@ input{
     color: black;
     cursor: pointer;
 }
+
+
+
