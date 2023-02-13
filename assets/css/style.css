@@ -111,7 +111,9 @@ margin-right: 0 !important;
 }
 
 /* Media queries for the cards */
-
+@media screen {
+    
+}
 
 
 input{
