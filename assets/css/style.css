@@ -15,7 +15,7 @@ header{
 }
 h1{
     color: rgb(12, 12, 90);
-    font-size: 1.8rem;
+    font-size: 30px;
     align-self: center;
     font-weight: 400;
 }
@@ -38,6 +38,7 @@ h1{
 .contact-links a i:hover{
     transform: scale(1.5);
 }
+
 /* Styles the Nav-Bar */
 .navbar{
     background-image: linear-gradient(#4A535E, #202d3b, rgb(39, 39, 62));
@@ -81,18 +82,48 @@ margin-right: 0 !important;
  }
  .jumbotron h2{
     color: white;
-    font-size: 4rem;
+    font-size: 50px;
     font-weight: 400;
  }
  .jumbotron p{
     color: white;
-    font-size: 1rem;
-    width: 40%;
+    font-size: 15px;
+    width: 60%;
     font-weight: 400;
  }
- 
+/* media query for header and jumbotron texts */
+@media(max-width:600px){
+    h1{
+        font-size: 20px;
+    }
+}
+@media(max-width:500px){
+    h1{
+        font-size: 15px;
+    }
+    .contact-links{
+        padding-right: 10px;
+    }
+}
+@media(max-width:400px){
+    h1{
+        font-size: 12px;
+    }
+    .contact-links{
+        padding-right: 10px;
+    }
+    .contact-links a{
+        margin-left: 5px;
+    }
+    .jumbotron h2{
+        font-size: 30px !important;
+    }
+    .jumbotron p{
+        font-size: smaller !important;
+    }
+}
 
-/* Media queries for search Bar */
+/* Media queries for search Bar
 @media (max-width: 1450px) and (min-width: 1150px) {
     .main form {
       top: 50%;
@@ -139,17 +170,16 @@ margin-right: 0 !important;
     input{
         width: 14rem !important;
     }
-}
+} */
 
 /* Styles the search Bar field */
-.main form{
+/* .main form{
     position: absolute;
-    top: 55%;
-    width: 100%;
+    width: 50%;
     text-align: center;
-}
+} */
 input{
-    width: 30rem;
+    width: 20rem;
     outline: none;
     height: 2.5rem;
     border-radius: 5px;
