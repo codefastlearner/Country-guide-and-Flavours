@@ -1,29 +1,50 @@
 
-/*Typography imports*/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lato:ital,wght@1,300;1,400&family=Orbitron&display=swap');
-
-
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
   body{
     background-color: rgba(224, 224, 224, 0.5);
+    font-family: 'Roboto', sans-serif;
   }
+
+/* Styles the header */
+header{
+    background-image: linear-gradient(to right, white, white, rgb(205, 205, 227));
+    display: flex;
+}
+h1{
+    color: rgb(12, 12, 90);
+    font-size: 30px;
+    align-self: center;
+    font-weight: 400;
+}
+.logo{
+    width: 5rem;
+}
+.contact-links{
+    align-self: center;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 3rem;
+}
+.contact-links a{
+    margin-left: 1.2rem;
+    text-decoration: none;
+}
+.contact-links a i{
+    transition: transform 0.3s;;
+}
+.contact-links a i:hover{
+    transform: scale(1.5);
+}
+
 /* Styles the Nav-Bar */
 .navbar{
     background-image: linear-gradient(#4A535E, #202d3b, rgb(39, 39, 62));
 }
-.logo{
-    width: 5rem;
-    border-radius: 20px;
-    transition: transform 1s;;
-}
-.logo:hover{
-    transform: scale(1.2);
-}
 .navbar-nav{
-   font-size: 1.2rem;
+   font-size: 1rem;
    font-weight: 550;
 }
 .nav-link{
@@ -47,21 +68,89 @@ margin-left: auto;
 margin-right: 0 !important;
 }
 
-/* Styles carousels */
-.carousel-item{
-    max-height: 100vh;
-    opacity: 0.80;
-}
-
-/* Styles the search Bar field */
-.main form{
-    position: absolute;
-    top: 55%;
+/* Styles jumbotron */
+.jumbotron{
+    background-image:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.5)), url(../images/g1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
     width: 100%;
-    text-align: center;
+ }
+ .jumbotron h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+ }
+ .jumbotron p{
+    color: white;
+    font-size: 15px;
+    width: 60%;
+    font-weight: 400;
+ }
+.jumbotron-search{
+    display:none;
+}
+/* media query for header, navBar and jumbotron texts */
+@media(max-width:1000px){
+    .jumbotron-search{
+        display: block;
+    }
+    .nav-search{
+        display: none;
+    }
+}
+@media(max-width:990px){
+    .nav-md{
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+    .contact{
+        margin-left: 31px !important;
+    }
+    .active:hover::after{
+    width: 0%;
+}
+.en{
+    display: none;
+}
+}
+@media(max-width:600px){
+    h1{
+        font-size: 20px;
+    }
+}
+@media(max-width:500px){
+    h1{
+        font-size: 15px;
+    }
+    .contact-links{
+        padding-right: 10px;
+    }
+}
+@media(max-width:400px){
+    h1{
+        font-size: 12px;
+    }
+    .contact-links{
+        padding-right: 10px;
+    }
+    .contact-links a{
+        margin-left: 5px;
+    }
+    .jumbotron h2{
+        font-size: 30px !important;
+    }
+    .jumbotron p{
+        font-size: smaller !important;
+    }
 }
 
-/* Media queries for search Bar */
+/* Media queries for search Bar
 @media (max-width: 1450px) and (min-width: 1150px) {
     .main form {
       top: 50%;
@@ -108,21 +197,24 @@ margin-right: 0 !important;
     input{
         width: 14rem !important;
     }
-}
+} */
 
-/* Media queries for the cards */
-@media screen {
-    
-}
-
-
+/* .main form{
+    position: absolute;
+    width: 50%;
+    text-align: center;
+} */
+/* Styles the search Bar field */
 input{
-    width: 30rem;
+    width: 20rem;
     outline: none;
     height: 2.5rem;
     border-radius: 5px;
     border-style: none;
 } 
+form{
+ padding-left: 20px;
+}
 .search-input-wrapper {
    position: relative;
    display: inline-block;
@@ -132,78 +224,38 @@ input{
 .search-input-wrapper::after {
    content:"";
    position: absolute;
-   z-index: 1;
+   z-index: 10;
    top: 0;
    bottom: 0;
    margin: auto;
    right: 0px;
-   background: url("/assets/images/search-icon-png-21.png") no-repeat center;
+   background: url("/assets/images/icons8-search.gif") no-repeat center;
    background-size: 20px auto;
    height: 25px;
    width: 40px;
 }
 
 
-
 /* Styles the card on landing page*/
-
-.container-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 40px 10px;
+.index-card{
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition: transform 1s;;
+}
+.row-2{
+    margin-top: 2rem;
 }
 
-
-.card {
-    display: block;
-    height: 60vh;
-    width: 450px;
-    margin: 0 0 30px 0;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0.12) 1px 1px 20px 0px;
+.index-card:hover{
+    transform: scale(1.015);
 }
-
-.card-img-top {
-    height: 40%;
-    width: 100%;
-}
-
-.card-title {
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-weight: 400 bold;
-    display: block;
-    margin-top: 20px;
-
-}
-
-
-
-.audio-bar {
-    width: 100%;
-}
-
-.card-text {
-    font-size: 1em;
-    width: 100%;
-}
-
 
 .heading-cards {
     text-align: center;
-    border-bottom: 2px solid black;
-    width: 300px;
     margin: 50px auto;
     font-size: 2rem;
   }
-
-  .btn {
-    color: aqua;
-    
-  }
   
-
 /* Styles card components on second page */
 .search-card{
     height: 40rem;
@@ -244,5 +296,24 @@ input{
     cursor: pointer;
 }
 
-
-
+/* Styles About Us section */
+.about-text{
+    background-color: #323232;
+    padding: 30px;
+    color: white;
+    width: 60%;
+    margin-left: 30px;
+    border-radius: 15px;
+    border-left: 5px solid red;
+    font-weight: 350px;
+}
+.about-header{
+    margin-left: 30px;
+    color: red;
+}
+/* Styles meet our team section */
+.profile-dp{
+    background-color: rgb(61, 56, 56);
+    height: 50vh;
+    margin-bottom: 30px;
+}
