@@ -115,7 +115,6 @@ margin-right: 0 !important;
     
 }
 
-
 input{
     width: 30rem;
     outline: none;
@@ -144,66 +143,30 @@ input{
 }
 
 
-
 /* Styles the card on landing page*/
-
-.container-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 40px 10px;
+.index-card{
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transition: transform 1s;;
+}
+.row-2{
+    margin-top: 2rem;
 }
 
-
-.card {
-    display: block;
-    height: 60vh;
-    width: 450px;
-    margin: 0 0 30px 0;
-    box-sizing: border-box;
-    box-shadow: rgba(0, 0, 0.12) 1px 1px 20px 0px;
+.index-card:hover{
+    transform: scale(1.015);
 }
-
-.card-img-top {
-    height: 40%;
-    width: 100%;
-}
-
-.card-title {
-    text-align: center;
-    font-family: Lato, sans-serif;
-    font-weight: 400 bold;
-    display: block;
-    margin-top: 20px;
-
-}
-
-
-
-.audio-bar {
-    width: 100%;
-}
-
-.card-text {
+/* .card-text {
     font-size: 1em;
     width: 100%;
-}
-
+} */
 
 .heading-cards {
     text-align: center;
-    border-bottom: 2px solid black;
-    width: 300px;
     margin: 50px auto;
     font-size: 2rem;
   }
-
-  .btn {
-    color: aqua;
-    
-  }
   
-
 /* Styles card components on second page */
 .search-card{
     height: 40rem;
