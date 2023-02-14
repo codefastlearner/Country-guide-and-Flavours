@@ -75,6 +75,7 @@ margin-right: 0 !important;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 90vh;
@@ -91,7 +92,33 @@ margin-right: 0 !important;
     width: 60%;
     font-weight: 400;
  }
-/* media query for header and jumbotron texts */
+.jumbotron-search{
+    display:none;
+}
+/* media query for header, navBar and jumbotron texts */
+@media(max-width:1000px){
+    .jumbotron-search{
+        display: block;
+    }
+    .nav-search{
+        display: none;
+    }
+}
+@media(max-width:990px){
+    .nav-md{
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+    .contact{
+        margin-left: 31px !important;
+    }
+    .active:hover::after{
+    width: 0%;
+}
+.en{
+    display: none;
+}
+}
 @media(max-width:600px){
     h1{
         font-size: 20px;
@@ -172,12 +199,12 @@ margin-right: 0 !important;
     }
 } */
 
-/* Styles the search Bar field */
 /* .main form{
     position: absolute;
     width: 50%;
     text-align: center;
 } */
+/* Styles the search Bar field */
 input{
     width: 20rem;
     outline: none;
@@ -185,6 +212,9 @@ input{
     border-radius: 5px;
     border-style: none;
 } 
+form{
+ padding-left: 20px;
+}
 .search-input-wrapper {
    position: relative;
    display: inline-block;
@@ -219,10 +249,6 @@ input{
 .index-card:hover{
     transform: scale(1.015);
 }
-/* .card-text {
-    font-size: 1em;
-    width: 100%;
-} */
 
 .heading-cards {
     text-align: center;
@@ -270,5 +296,24 @@ input{
     cursor: pointer;
 }
 
-
-
+/* Styles About Us section */
+.about-text{
+    background-color: #323232;
+    padding: 30px;
+    color: white;
+    width: 60%;
+    margin-left: 30px;
+    border-radius: 15px;
+    border-left: 5px solid red;
+    font-weight: 350px;
+}
+.about-header{
+    margin-left: 30px;
+    color: red;
+}
+/* Styles meet our team section */
+.profile-dp{
+    background-color: rgb(61, 56, 56);
+    height: 50vh;
+    margin-bottom: 30px;
+}

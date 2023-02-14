@@ -40,11 +40,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+      <div class="navbar-nav nav-md">
         <a class="nav-link active" href="#about-us">About Us</a>
         <a class="nav-link active" href="#">Destinations</a>
-        <!-- Search input field -->
-        <form class="search-field">
+<!-- Search input field for navBar-->
+        <form class="search-field nav-search">
           <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
           <a href="#">
             <i id="searchButton" class="search-input-wrapper search"></i>
@@ -52,9 +52,9 @@
         </form>
       </div>
       </section>
-      <a class="nav-link active" href="#">Contact</a>
+      <a class="nav-link active contact" href="#">Contact</a>
     </div>
-    <li class="nav-item dropdown navbar-nav">
+    <li class="nav-item dropdown navbar-nav en">
       <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
         En
       </a>
@@ -67,24 +67,28 @@
   </nav>
   <!-- Jumbotron -->
   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h2 class="display-4">Welcome to Country Guide and Flavours!</h2>
-      <p class="lead">Your one-stop destination for discovering the world's most exciting places and authentic cuisines.
-        Our mission is to provide you with comprehensive travel information, top-rated recommendations, and
-        mouth-watering recipes that will take you on a journey around the globe. Whether you're a seasoned traveler or a
-        curious explorer, we've got you covered. So, sit back, relax, and let us take you on an adventure you'll never
-        forget!</p>
+    <div class="flex-container">
+      <div class="container">
+        <h2 class="display-4">Welcome to Country Guide and Flavours!</h2>
+        <p class="lead">Your one-stop destination for discovering the world's most exciting places and authentic
+          cuisines.
+          Our mission is to provide you with comprehensive travel information, top-rated recommendations, and
+          mouth-watering recipes that will take you on a journey around the globe. Whether you're a seasoned traveler or
+          a
+          curious explorer, we've got you covered. So, sit back, relax, and let us take you on an adventure you'll never
+          forget!</p>
+      </div>
+<!-- Search input field for jumbortron-->
+    <form class="search-field jumbotron-search">
+      <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
+      <a href="#">
+        <i id="searchButton" class="search-input-wrapper search"></i>
+      </a>
+    </form>
     </div>
   </div>
-  <!-- Search input field
-  <form class="search-field">
-    <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
-    <a href="#">
-      <i id="searchButton" class="search-input-wrapper search"></i>
-    </a>
-  </form>
+  </section>
   </div>
-  </section> -->
   <!-- Sub-heading -->
   <h2 class="heading-cards">Something catchy</h2>
 
@@ -171,13 +175,25 @@
                 deleniti quaerat pariatur officia maxime aliquid nihil sint?</p>
               <a href="#">
                 <button type="button" class="btn btn-primary">Visit Site</button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  <section id="about-us">
+    <h2 class="about-header">About Us</h2>
+    <p class="about-text">"Country Guide and Flavours" is a travel brand that aims to connect people with their dream destinations. We
+      provide comprehensive information about each country, including its culture, history, attractions, and cuisine.
+      Our focus on food means that we not only provide you with the best travel recommendations, but also with authentic
+      recipes that capture the essence of each destination. At "Country Guide and Flavours", we are passionate about
+      helping you explore the world, one dish at a time.</p>
+  </section>
+  <article class="profile">
+    <h2>Meet our team</h2>
+    <div class="profile-dp"></div>
+  </article>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
