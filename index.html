@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <a class="navbar-brand" href="#"> <img src="./assets/images/brand logo.png" alt="brand-logo" class="logo"> </a>
     <h1>Country Guide and Flavours</h1>
     <div class="contact-links">
@@ -43,7 +43,7 @@
       <div class="navbar-nav nav-md">
         <a class="nav-link active" href="#about-us">About Us</a>
         <a class="nav-link active" href="#">Destinations</a>
-<!-- Search input field for navBar-->
+        <!-- Search input field for navBar-->
         <form class="search-field nav-search">
           <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
           <a href="#">
@@ -78,13 +78,13 @@
           curious explorer, we've got you covered. So, sit back, relax, and let us take you on an adventure you'll never
           forget!</p>
       </div>
-<!-- Search input field for jumbortron-->
-    <form class="search-field jumbotron-search">
-      <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
-      <a href="#">
-        <i id="searchButton" class="search-input-wrapper search"></i>
-      </a>
-    </form>
+      <!-- Search input field for jumbortron-->
+      <form class="search-field jumbotron-search">
+        <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
+        <a href="#">
+          <i id="searchButton" class="search-input-wrapper search"></i>
+        </a>
+      </form>
     </div>
   </div>
   </section>
@@ -184,16 +184,56 @@
   </section>
   <section id="about-us">
     <h2 class="about-header">About Us</h2>
-    <p class="about-text">"Country Guide and Flavours" is a travel brand that aims to connect people with their dream destinations. We
+    <p class="about-text">"Country Guide and Flavours" is a travel brand that aims to connect people with their dream
+      destinations. We
       provide comprehensive information about each country, including its culture, history, attractions, and cuisine.
       Our focus on food means that we not only provide you with the best travel recommendations, but also with authentic
       recipes that capture the essence of each destination. At "Country Guide and Flavours", we are passionate about
       helping you explore the world, one dish at a time.</p>
   </section>
   <article class="profile">
-    <h2>Meet our team</h2>
-    <div class="profile-dp"></div>
+    <h2 class="profile-text">Meet our team</h2>
+    <div class="profile-dp">
+      <div class="card" style="width: 12rem;">
+        <img src="./assets/images/dp 1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-text">Ciprain Oltean</h4>
+          <p class="card-text">Team Leader</p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+        <img src="./assets/images/dp2.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-text">Navjot Kaur</h4>
+          <p class="card-text">Jnr. Frontend Dev</p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+        <img src="./assets/images/dp 1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-text">Sabrie Sakariye</h4>
+          <p class="card-text">Jnr. Frontend Dev</p>
+        </div>
+      </div>
+      <div class="card" style="width: 12rem;">
+        <img src="./assets/images/dp 1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-text">Victor Akindele</h4>
+          <p class="card-text">Jnr. Frontend Dev</p>
+        </div>
+      </div>
+    </div>
   </article>
+
+<!-- Footer -->
+<footer>
+<!-- Arrow back to top -->
+<div>
+  <a href="#top">
+    <img src="./assets/images/arrow-up-up.gif" alt="" id="home-arrow">
+  </a>
+</div>
+</footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

@@ -17,5 +17,19 @@ fetch('https://rest-country-api.p.rapidapi.com/' + countryName , options)
 	.catch(err => console.error(err));
 });
 
+// Sets arrow to display which takes user back to top of page when clicked
+const arrow = document.querySelector('#home-arrow');
+const pageHeight = document.documentElement.scrollHeight;
+const quarterPageHeight = pageHeight * 0.25;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= quarterPageHeight) {
+    arrow.style.display = "block";
+  } else {
+    arrow.style.display = "none";
+  }
+});
+
+
 
 

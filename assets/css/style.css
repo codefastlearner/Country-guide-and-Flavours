@@ -229,7 +229,7 @@ form{
    bottom: 0;
    margin: auto;
    right: 0px;
-   background: url("/assets/images/icons8-search.gif") no-repeat center;
+   background: url("https://i.ibb.co/D1dvJTV/icons8-search.gif") no-repeat center;
    background-size: 20px auto;
    height: 25px;
    width: 40px;
@@ -311,9 +311,58 @@ form{
     margin-left: 30px;
     color: red;
 }
+#about-us{
+    margin-bottom: 3rem;
+}
 /* Styles meet our team section */
 .profile-dp{
     background-color: rgb(61, 56, 56);
-    height: 50vh;
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: center;
+    /* align-self: center; */
+}
+.profile-dp .card{
+   margin-left: 40px;
+   transition: 0.5s;
+
+}
+.profile-dp .card:hover{
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4), 0 4px 8px rgba(255, 255, 255, 0.06);
+}
+.profile-text{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 3%;
+    font-size: 18px;
+    
+}
+.profile{
+    position: relative;
+}
+.profile h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+.profile p{
+    font-size: 12px;
+}
+/* Styles the arrow to go back to top of page */
+#home-arrow{
+    width: 80px;
+    position: fixed;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    cursor: pointer;
+}
+/* Styles the footer */
+footer{
+    background-color: #242a3c;
+    height: 50px;
 }
