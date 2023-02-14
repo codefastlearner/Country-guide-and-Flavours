@@ -67,11 +67,30 @@ margin-left: auto;
 margin-right: 0 !important;
 }
 
-/* Styles carousels */
-.carousel-item{
-    max-height: 100vh;
-    opacity: 0.80;
-}
+/* Styles jumbotron */
+.jumbotron{
+    background-image:linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.5)), url(../images/g1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+ }
+ .jumbotron h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+ }
+ .jumbotron p{
+    color: white;
+    font-size: 1rem;
+    width: 40%;
+    font-weight: 400;
+ }
+ 
 
 /* Media queries for search Bar */
 @media (max-width: 1450px) and (min-width: 1150px) {
