@@ -7,13 +7,9 @@
     background-color: rgba(224, 224, 224, 0.5);
     font-family: 'Roboto', sans-serif;
   }
-/* Styles the Nav-Bar */
-.navbar{
-    background-image: linear-gradient(#4A535E, #202d3b, rgb(39, 39, 62));
-}
+
 /* Styles the header */
 header{
-    /* background-color: white; */
     background-image: linear-gradient(to right, white, white, rgb(205, 205, 227));
     display: flex;
 }
@@ -25,6 +21,26 @@ h1{
 }
 .logo{
     width: 5rem;
+}
+.contact-links{
+    align-self: center;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 3rem;
+}
+.contact-links a{
+    margin-left: 1.2rem;
+    text-decoration: none;
+}
+.contact-links a i{
+    transition: transform 0.3s;;
+}
+.contact-links a i:hover{
+    transform: scale(1.5);
+}
+/* Styles the Nav-Bar */
+.navbar{
+    background-image: linear-gradient(#4A535E, #202d3b, rgb(39, 39, 62));
 }
 .navbar-nav{
    font-size: 1rem;
@@ -55,14 +71,6 @@ margin-right: 0 !important;
 .carousel-item{
     max-height: 100vh;
     opacity: 0.80;
-}
-
-/* Styles the search Bar field */
-.main form{
-    position: absolute;
-    top: 55%;
-    width: 100%;
-    text-align: center;
 }
 
 /* Media queries for search Bar */
@@ -114,11 +122,13 @@ margin-right: 0 !important;
     }
 }
 
-/* Media queries for the cards */
-@media screen {
-    
+/* Styles the search Bar field */
+.main form{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
 }
-
 input{
     width: 30rem;
     outline: none;
