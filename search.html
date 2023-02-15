@@ -1,103 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Roboto+Slab:wght@100&family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
-    <script src="https://kit.fontawesome.com/de1197ced0.js" crossorigin="anonymous"></script>
-    <title>Country Guide and Flavours| Search</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Roboto+Slab:wght@100&family=Roboto:wght@100;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/de1197ced0.js" crossorigin="anonymous"></script>
+  <title>Country Guide and Flavours| Search</title>
 </head>
+
 <body>
-    <header>
-        <a class="navbar-brand" href="#"> <img src="./assets/images/brand logo.png" alt="brand-logo" class="logo"> </a>
-        <h1>Country Guide and Flavours</h1>
-        <div class="contact-links">
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
+  <header>
+    <a class="navbar-brand" href="#"> <img src="./assets/images/brand logo.png" alt="brand-logo" class="logo"> </a>
+    <h1>Country Guide and Flavours</h1>
+    <div class="contact-links">
+      <a href="#" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+  </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="#about-us">About Us</a>
+        <a class="nav-link active" href="#">Destinations</a>
+        <!-- Search input field -->
+        <form class="search-field">
+          <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
+          <a href="#">
+            <i id="searchButton" class="search-input-wrapper search"></i>
           </a>
-          <a href="#" target="_blank">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="#" target="_blank">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+        </form>
+      </div>
+      </section>
+      <a class="nav-link active" href="#">Contact</a>
+    </div>
+    <li class="nav-item dropdown navbar-nav">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+        En
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Fr</a>
+        <a class="dropdown-item" href="#">Esp</a>
+      </div>
+    </li>
+    </div>
+  </nav>
+  <!-- Displays search result for user -->
+  <article>
+    <div class="card search-card" style="width: 30rem;">
+      <!-- Allows user to save and share search result -->
+      <div class="share-save">
+        <a href="#">
+          <p>share
+            <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
+          </p>
+        </a>
+        <a href="#">
+          <p>save
+            <i class="fa-regular fa-floppy-disk"></i>
+          </p>
+        </a>
+      </div>
+      <div class="result">
+        <img src="" class="card-img-top flag" alt="..." >
+        <div class="card-body">
+          <h5 class="card-text name" id="search-name"></h5>
+          <p class="card-text capital" id="search-capital"></p>
+          <p class="card-text region" id="search-region"></p>
+          <p class="card-text population" id="search-population"></p>
+          <p class="card-text language" id="search-language"></p>
+          <p class="card-text zone" id="search-zone"></p>
+          <a href="#" class="btn btn-primary" id="flavour">
+            Explore Flavour</a>
+          <div id="demo"></div>
+          <!-- <a href="./index.html" class="btn btn-secondary btn2">Back Home</a> -->
         </div>
-      </header>
-      <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      </div>
+  </article>
+<!-- Modal for explore flavours -->
+  <article>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch modal
+</button>
+
+<!-- Modal -->
+<!-- <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#about-us">About Us</a>
-            <a class="nav-link active" href="#">Destinations</a>
-            <!-- Search input field -->
-            <form class="search-field">
-              <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
-              <a href="#">
-                <i id="searchButton" class="search-input-wrapper search"></i>
-              </a>
-            </form>
-          </div>
-          </section>
-          <a class="nav-link active" href="#">Contact</a>
-        </div>
-        <li class="nav-item dropdown navbar-nav">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            En
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Fr</a>
-            <a class="dropdown-item" href="#">Esp</a>
-          </div>
-        </li>
-        </div>
-      </nav>
-<!-- Displays search result for user -->
-    <article>
-        <div class="card search-card" style="width: 30rem;">
-            <!-- Allows user to save and share search result -->
-            <div class="share-save">
-                <a href="#">
-                    <p>share
-                        <i class="fa-sharp fa-solid fa-arrow-up-from-bracket"></i>
-                    </p>
-                </a>
-                <a href="#">
-                    <p>save
-                       <i class="fa-regular fa-floppy-disk"></i>
-                    </p>
-                </a>
-            </div>
-            <img src="./assets/images/flag-800.png" class="card-img-top" alt="..." id="flags">
-            <div class="card-body">
-              <h5 class="card-text" id="search-text">Name:</h5>
-              <p class="card-text" id="search-text">Capital:</p>
-              <p class="card-text" id="search-text">Region:</p>
-              <p class="card-text" id="search-text">Population:</p>
-              <p class="card-text" id="search-text">Language:</p>
-              <p class="card-text" id="search-text">Time zone:</p>
-              <a href="#" class="btn btn-primary" id="flavour">Explore Flavour</a>
-              <a href="./index.html" class="btn btn-secondary btn2">Back Home</a>
-            </div>
-        </div>
-    </article>
-    
+      </div>
+      <div class="modal-body">
+        <h5>Popover in a modal</h5>
+        <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+        <hr>
+        <h5>Tooltips in a modal</h5>
+        <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </article> -->
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/search.js"></script>
 </body>
+
 </html>

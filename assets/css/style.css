@@ -43,7 +43,7 @@ h1{
 .navbar{
     background-image: linear-gradient(#4A535E, #202d3b, rgb(39, 39, 62));
 }
-.navbar-nav{
+.active, .en{
    font-size: 1rem;
    font-weight: 550;
 }
@@ -354,6 +354,7 @@ form{
 }
 /* Styles the arrow to go back to top of page */
 #home-arrow{
+    display: none;
     width: 80px;
     position: fixed;
     right: 50%;
@@ -370,4 +371,10 @@ footer p{
     text-align: center;
     color: white;
     padding-top: 12px;
+}
+
+
+
+.error{
+    color: red;
 }
