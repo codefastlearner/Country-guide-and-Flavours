@@ -19,7 +19,7 @@
 
 <body>
   <header>
-    <a class="navbar-brand" href="#"> <img src="./assets/images/brand logo.png" alt="brand-logo" class="logo"> </a>
+    <a class="navbar-brand" href="./index.html"> <img src="./assets/images/brand logo.png" alt="brand-logo" class="logo"> </a>
     <h1>Country Guide and Flavours</h1>
     <div class="contact-links">
       <a href="#" target="_blank">
@@ -90,13 +90,53 @@
           <p class="card-search population" id="search-population"></p>
           <p class="card-search language" id="search-language"></p>
           <p class="card-search zone" id="search-zone"></p>
-          <a href="#" class="btn btn-primary" id="flavour">Explore Flavour</a>
-          <div id="demo"></div>
+          <!-- Button to show the modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop" id="explore">
+            Explore flavour
+          </button>
           <!-- <a href="./index.html" class="btn btn-secondary btn2">Back Home</a> -->
         </div>
       </div>
   </article>
+  
   <!-- Modal for explore flavours -->
+    
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Local flavour</h5>
+        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button> -->
+      </div>
+      <div class="modal-body">
+          <div class="modal-cards">
+            <img src="" alt="" class="modal-img" id="0">
+            <h5 class="modal-text" id="t0"></h5>
+          </div>
+          <div class="modal-cards">
+            <img src="" alt="" class="modal-img" id="1">
+            <h5 class="modal-text" id="t1"></h5>
+          </div>
+      </div>
+      <div class="modal-body2">
+        <div class="modal-cards">
+          <img src="" alt="" class="modal-img" id="2">
+          <h5 class="modal-text" id="t2"></h5>
+        </div>
+        <div class="modal-cards">
+          <img src="" alt="" class="modal-img" id="3">
+          <h5 class="modal-text" id="t3"></h5>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <article>
 
   </article>
