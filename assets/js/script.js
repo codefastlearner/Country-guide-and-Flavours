@@ -33,12 +33,12 @@ searchBtn.addEventListener("click", (e) => {
 });
 
 function savesCountryResult(data) {
-  // let imgTag = $(".flag");
   let name = data[0].name.common;
   let flag = data[0].flags.svg;
   let capital = data[0].capital[0];
   let region = data[0].continents[0];
-  let population = data[0].population;
+  let populations = data[0].population;
+  let populationInMillions = (populations / 1000000).toFixed(2);
   let language = Object.values(data[0].languages)
     .toString()
     .split(",")
@@ -51,14 +51,14 @@ function savesCountryResult(data) {
     name,
     capital,
     region,
-    population,
+    populationInMillions,
     language,
     timeZone,
   ];
   localStorage.setItem("countryData", JSON.stringify(countryArray));
 }
 
-// Sets arrow to display which takes user back to top of page when clicked
+// Sets arrow to 'display', this takes user back to top of page when clicked
 const arrow = document.querySelector("#home-arrow");
 const pageHeight = document.documentElement.scrollHeight;
 const quarterPageHeight = pageHeight * 0.25;

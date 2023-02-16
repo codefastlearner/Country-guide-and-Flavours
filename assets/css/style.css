@@ -32,7 +32,7 @@ h1 {
   text-decoration: none;
 }
 .contact-links a i {
-  transition: transform 0.3s;
+  transition: transform 0.6s;
 }
 .contact-links a i:hover {
   transform: scale(1.5);
@@ -96,60 +96,6 @@ h1 {
 .jumbotron-search {
   display: none;
 }
-/* media query for header, navBar and jumbotron texts */
-@media (max-width: 1000px) {
-  .jumbotron-search {
-    display: block;
-  }
-  .nav-search {
-    display: none;
-  }
-}
-@media (max-width: 990px) {
-  .nav-md {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-  }
-  .contact {
-    margin-left: 31px !important;
-  }
-  .active:hover::after {
-    width: 0%;
-  }
-  .en {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  h1 {
-    font-size: 20px;
-  }
-}
-@media (max-width: 500px) {
-  h1 {
-    font-size: 15px;
-  }
-  .contact-links {
-    padding-right: 10px;
-  }
-}
-@media (max-width: 400px) {
-  h1 {
-    font-size: 12px;
-  }
-  .contact-links {
-    padding-right: 10px;
-  }
-  .contact-links a {
-    margin-left: 5px;
-  }
-  .jumbotron h2 {
-    font-size: 30px !important;
-  }
-  .jumbotron p {
-    font-size: smaller !important;
-  }
-}
 
 /* Styles the search Bar field */
 input {
@@ -187,6 +133,64 @@ form {
   font-size: 15px;
   text-align: center;
 }
+/* media query for header, navBar, jumbotron texts and searchBar */
+@media (max-width: 1000px) {
+    .jumbotron-search {
+      display: block;
+    }
+    .nav-search {
+      display: none;
+    }
+  }
+  @media (max-width: 990px) {
+    .nav-md {
+      margin-left: 0 !important;
+      margin-right: auto !important;
+    }
+    .contact {
+      margin-left: 31px !important;
+    }
+    .active:hover::after {
+      width: 0%;
+    }
+    .en {
+      display: none;
+    }
+  }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 15px;
+    }
+    .contact-links {
+      padding-right: 10px;
+    }
+    input{
+      width: 15rem !important;
+    }
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 12px;
+    }
+    .contact-links {
+      padding-right: 10px;
+    }
+    .contact-links a {
+      margin-left: 5px;
+    }
+    .jumbotron h2 {
+      font-size: 30px !important;
+    }
+    .jumbotron p {
+      font-size: smaller !important;
+    }
+  }
+  
 
 /* Styles the card on landing page*/
 .heading-cards{
@@ -318,7 +322,8 @@ form {
 /* Media query for 'about us' and 'meet the team' section */
 @media (max-width: 700px){
     .profile-container{
-        overflow-y: scroll;
+        white-space: nowrap;
+        overflow-x: scroll;
         padding-top: 45px;
      }
      .profile{
