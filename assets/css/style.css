@@ -7,6 +7,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+
+
 /* Styles the header */
 header {
   background-image: linear-gradient(to right, white, white, rgb(205, 205, 227));
@@ -334,7 +336,7 @@ footer p {
 
 /* Styles card components on second page */
 .search-card {
-  height: 42rem;
+  height: 45rem;
   display: block;
   margin: 3em auto;
   transition: transform 1s;
@@ -347,9 +349,7 @@ footer p {
 .search-card:hover {
   transform: scale(1.02);
 }
-/* .btn2 {
-  margin-left: 12em;
-} */
+
 /* Styles the share and save button on page 2 */
 .share-save {
   position: absolute;
@@ -405,3 +405,5 @@ footer p {
 #home-button i:hover{
   transform: scale(1.1);
 }
+
+/* @media (max-width: ) */

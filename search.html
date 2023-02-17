@@ -15,6 +15,12 @@
   <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
   <script src="https://kit.fontawesome.com/de1197ced0.js" crossorigin="anonymous"></script>
   <title>Country Guide and Flavours| Search</title>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
@@ -44,25 +50,20 @@
       <div class="navbar-nav">
         <a class="nav-link active" href="./index.html#about-us">About Us</a>
         <a class="nav-link active" href="./index.html#destinations">Destinations</a>
-        <!-- Search input field -->
-        <!-- <form class="search-field">
-          <input type="text" placeholder="Search country..." class="form-input" id="countryInput">
-          <a href="#">
-            <i id="searchButton" class="search-input-wrapper search"></i>
-          </a>
-        </form> -->
+
       </div>
       </section>
       <a class="nav-link active" href="#">Contact</a>
     </div>
     <li class="nav-item dropdown navbar-nav">
-      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+      <div id="google_translate_element"></div>
+      <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
         En
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="#">Fr</a>
         <a class="dropdown-item" href="#">Esp</a>
-      </div>
+      </div> -->
     </li>
     </div>
   </nav>
@@ -146,10 +147,6 @@
   </footer>
 
 
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -163,3 +160,8 @@
 </body>
 
 </html>
+
+
+
+
+
