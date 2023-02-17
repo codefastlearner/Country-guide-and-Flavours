@@ -1,12 +1,24 @@
 // Define variable globally
 let searchBtn = document.getElementById("searchButton");
 let countryInp = document.getElementById("countryInput");
-let formE1 = document.getElementById("form-submit");
+
+// Adds event listener to generate search by clicking enter button
+countryInp.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    // Execute search function here
+    search();
+  }
+});
 
 // add click event listner to search button
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
+// Execute search function here
+  search();
+});
 
+// Defines function for search parameter
+function search() {
   let countryName = countryInp.value;
   let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
   console.log(finalURL);
@@ -30,8 +42,9 @@ searchBtn.addEventListener("click", (e) => {
         }, 3000);
       }
     });
-});
+}
 
+// Function that stores fetched data
 function savesCountryResult(data) {
   let name = data[0].name.common;
   let flag = data[0].flags.svg;
