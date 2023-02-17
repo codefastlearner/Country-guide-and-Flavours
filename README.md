@@ -32,6 +32,10 @@ Victor Akindele https://github.com/hurlavic
 
 Please refer to license in repo.
 
+## Note
+
+Website development still in progress to improve functionality, accessibility and inclusiveness for more users. Watch this space!
+
 
 
 

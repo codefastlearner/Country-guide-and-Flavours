@@ -216,51 +216,6 @@ form {
   font-size: 2rem;
 }
 
-
-
-
-
-
-/* Styles card components on second page */
-.search-card {
-  height: 42rem;
-  display: block;
-  margin: 5em auto;
-  transition: transform 1s;
-  position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
-}
-.card-text, .card-title {
-  text-align: center;
-}
-.search-card:hover {
-  transform: scale(1.02);
-}
-.btn2 {
-  margin-left: 12em;
-}
-/* Styles the share and save button on page 2 */
-.share-save {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 1rem;
-}
-.share-save p {
-  display: inline-block;
-  margin-left: 1.1rem;
-  background-image: linear-gradient(white, rgba(185, 185, 211, 0.7));
-  padding: 0.5rem;
-  border-radius: 10px;
-  font-size: 0.5rem;
-  font-weight: 500;
-}
-.share-save a {
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
-}
-
 /* Styles About Us section */
 .about-text {
   background-color: #323232;
@@ -372,6 +327,51 @@ footer p {
   padding-top: 12px;
 }
 
+
+
+/* CSS for second page */
+
+
+/* Styles card components on second page */
+.search-card {
+  height: 42rem;
+  display: block;
+  margin: 3em auto;
+  transition: transform 1s;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+.card-text, .card-title {
+  text-align: center;
+}
+.search-card:hover {
+  transform: scale(1.02);
+}
+/* .btn2 {
+  margin-left: 12em;
+} */
+/* Styles the share and save button on page 2 */
+.share-save {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+.share-save p {
+  display: inline-block;
+  margin-left: 1.1rem;
+  background-image: linear-gradient(white, rgba(185, 185, 211, 0.7));
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 0.5rem;
+  font-weight: 500;
+}
+.share-save a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
 /* Styles modal on second page */
 .modal-body{
   display: flex;
@@ -392,4 +392,16 @@ footer p {
 .modal-text{
   text-align: center;
   font-size: 10px;
+}
+#home-button{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#home-button i{
+  font-size: 30px;
+  color: red;
+  transition: transform 0.6s;
+}
+#home-button i:hover{
+  transform: scale(1.1);
 }
