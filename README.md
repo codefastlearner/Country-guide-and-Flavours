@@ -7,9 +7,11 @@ N/A
 
 ## Usage
 
-To use this webpage, click on this link https://codefastlearner.github.io/Country-guide-and-Flavours/search.html this opens up the website. The header contains a nav-bar with links to different sections including our social media pages (this is still a work in progress, link will be active in next update). There is a search bar where user can search any destination countries of their choice and the results is displayed on a new page. There is an "explore flavor" button displayed with the search results which can be clicked to see the unique dishes avaialable in the particular country (a maximum of 4 dishes can be viewed currently, hoping to expand this in the next update). The user can also share the resukt on social media as well as save it on their device (this feature will be available in next update).
+To use this webpage, click on this link https://codefastlearner.github.io/Country-guide-and-Flavours/search.html this opens up the website. The header contains a nav-bar with links to different sections including our social media pages (this is still a work in progress, link will be active in next update). There is a search bar where user can search any destination countries of their choice and the results is displayed on a new page. There is an "explore flavor" button displayed with the search results which can be clicked to see the unique dishes avaialable in the particular country (a maximum of 4 dishes can be viewed currently, hoping to expand this in the next update). The user can also share the result on social media as well as save it on their device (this feature will be available in next update).
 
 Also, there is some list of available countries on the landing page with brief descriptions for quicker exploration. This includes exploring the country's list of amazing dishes which can be accessed by clicking the "explore flavour" button just below the descriptions.
+
+We hope you enjoy the functionality!
 
 ## Mock Up
 ![alt text](/assets/images/mockup1.png)
