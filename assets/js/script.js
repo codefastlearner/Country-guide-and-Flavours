@@ -5,6 +5,7 @@ let countryInp = document.getElementById("countryInput");
 // Adds event listener to generate search by clicking enter button
 countryInp.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
+    event.preventDefault();
     // Execute search function here
     search();
   }
